@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Color Display */
+  .color-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  /* Color Options */
+  .color-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .color-option {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Game Instructions */
+  .instructions {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Game Status */
+  .game-status {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  /* Score */
+  .score {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* New Game Button */
+  .new-game-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .new-game-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .color-options {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .color-box {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .color-option {
+      width: 80px;
+      height: 80px;
+    }
+  }
